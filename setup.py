@@ -1,5 +1,5 @@
 from distutils.core import setup
-setup(name='QualiLiab-CLI', packages=['QualiLab-CLI'], version='1.0.0',
+setup(name='QualiLab-CLI', packages=['QualiLab-CLI'], version='1.0.0',
       description='Command line library suport Telnet and SSH for use with Quali CloudShell field solutions', author='Gregory Sloan',
       author_email='gregory.s@quali.com',
       url='https://github.com/QualiSystemsLab/QualiLab-CLI',

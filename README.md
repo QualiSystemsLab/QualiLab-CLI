@@ -5,8 +5,11 @@ This package provides CLI functionality for use in Quali CloudShell field soluti
 ## Code Example
 
 session = Cli('localhost', 22, 'Telnet', 'USERNAME', 'PASSWORD', prompt_list=['.*>', '.*]', '.* ENTER'])
+
 session.login()
+
 result = session.send_and_receive('cli command')
+
 print result
 
 ## Motivation

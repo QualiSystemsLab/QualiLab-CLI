@@ -75,6 +75,7 @@ class Cli:
             self.handler.login(self.account)
             self._write_log('Logged In')
         except:
+            print "unable to login to target"
             self._write_log('Unable to login to target', 'error')
             self._write_log(sys.exc_info()[0], 'error')
             raise

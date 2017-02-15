@@ -2,7 +2,17 @@
 
 This package provides CLI functionality for use in Quali CloudShell field solutions.
 
+## Installation
+
+The best way is to just add this package to your python environment/driver.
+So either:
+`pip install qualilab_cli`
+or add this package to the requirements.txt file of your driver.
+
 ## Code Example
+
+```python
+from QualiLab_CLI.Cli_Lib import Cli
 
 session = Cli('localhost', 22, 'Telnet', 'USERNAME', 'PASSWORD', prompt_list=['.*>', '.*]', '.* ENTER'])
 
@@ -11,6 +21,7 @@ session.login()
 result = session.send_and_receive('cli command')
 
 print result
+```
 
 ## Motivation
 

@@ -80,6 +80,19 @@ class Cli:
             self._write_log(sys.exc_info()[0], 'error')
             raise
 
+    def authenticate(self):
+        """ Logs in to device usuing protocol authenticate procedure
+
+        :return:
+        """
+        try:
+            self.handler.authenticate(self.account)
+            self._write_log('Authenticated!')
+        except:
+            self._write_log('Unable to authenticate to target', 'error')
+            self._write_log(sys.exc_info()[0], 'error')
+            raise
+
     def send_and_receive(self, command, pattern_list=None):
         """ Sends a command and receives the response using expect
 

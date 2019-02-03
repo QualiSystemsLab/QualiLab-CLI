@@ -1,6 +1,7 @@
 ## Synposis
 
-This package provides CLI functionality for use in Quali CloudShell field solutions.
+This package provides simple CLI functionality for use in Quali CloudShell field solutions.
+For a more comprehensive package, check out the [cloudshell-cli](https://github.com/QualiSystems/cloudshell-cli) package.
 
 ## Installation
 
